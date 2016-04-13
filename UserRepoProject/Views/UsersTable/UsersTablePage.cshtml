@@ -1,0 +1,47 @@
+﻿
+@model UserRepoProject.Models.UsersTablePageViewModel
+
+@{
+    ViewBag.Title = "UsersTable";
+}
+
+<h2>UsersTable</h2>
+
+@Html.DisplayNameFor(vModel => vModel.modelTitle)
+
+<hr />
+
+<table class="table">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+           userName
+        </th>
+        <th>
+            userLastName
+        </th>
+        <th>
+            userAge
+        </th>
+    </tr>
+
+    @foreach (var item in Model.usersRepository.getAllUsersList())
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+        </tr>
+    }
+</table>

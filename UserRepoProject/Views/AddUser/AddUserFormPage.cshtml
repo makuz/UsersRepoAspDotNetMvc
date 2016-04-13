@@ -1,0 +1,28 @@
+﻿@model UserRepoProject.Models.UserDetails
+
+
+@{
+    ViewBag.Title = "AddUserFormPage";
+}
+
+<h2>AddUserFormPage</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(u => u.Name)
+    <br />
+    @Html.TextBoxFor(u => u.Name)
+    <br />
+    @Html.LabelFor(u => u.lastName)
+    <br />
+    @Html.TextBoxFor(u => u.lastName)
+    <br />
+    @Html.LabelFor(u => u.Age)
+    <br />
+    @Html.TextBoxFor(u => u.Age)
+    <br />
+
+    <input type="submit" value="add user" />
+
+}
+
