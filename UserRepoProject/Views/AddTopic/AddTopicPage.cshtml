@@ -1,0 +1,26 @@
+﻿@model UserRepoProject.Models.Topic
+
+
+@{
+    ViewBag.Title = "AddTopicPage";
+}
+
+<h2>AddTopicPage</h2>
+
+@using (Html.BeginForm("AddNew", "AddTopic", FormMethod.Post, new { @Class = "form-horizontal" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(t => t.Title, new { @Class = "control-label" })
+        @Html.TextBoxFor(t => t.Title, new { @Class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(t => t.Content, new { @Class = "control-label" })
+        @Html.TextAreaFor(t => t.Content, new { @Class = "form-control"})
+    </div>
+
+    <div class="form-group">
+        <input class="btn btn-success" type="submit" value="add Topic" />
+    </div>
+}
+

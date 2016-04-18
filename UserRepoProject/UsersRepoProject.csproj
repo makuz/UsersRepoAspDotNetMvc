@@ -156,6 +156,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AddTopicController.cs" />
     <Compile Include="Controllers\AddUserController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersTableController.cs" />
@@ -219,6 +220,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\AddUser\AddUserFormPage.cshtml" />
     <Content Include="Views\UsersTable\UsersTablePage.cshtml" />
+    <Content Include="Views\AddTopic\AddTopicPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

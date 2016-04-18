@@ -19,7 +19,7 @@ namespace UserRepoProject.Repository
 
         public DbSet<UserDetails> Users { get; set; }
 
-        public DbSet<Topic> topics { get; set; }
+        public DbSet<Topic> Topics { get; set; }
 
     }
 }
