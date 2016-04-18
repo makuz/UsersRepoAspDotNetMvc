@@ -1,0 +1,36 @@
+﻿@model UserRepoProject.Models.AllTopicsViewModel
+
+@{
+    ViewBag.Title = "AllTopicsPage";
+}
+
+<h2>AllTopicsPage</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            author
+        </th>
+        <th>
+            title
+        </th>
+        <th>
+            content
+        </th>
+    </tr>
+
+    @foreach (var item in Model.AllTopics)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author.Name) &nbsp; @Html.DisplayFor(modelItem => item.Author.lastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+        </tr>
+    }
+</table>

@@ -29,6 +29,11 @@ namespace UserRepoProject.Repository
            return appDbContext.Users.ToList();
         }
 
+        public UserDetails findOneByPk(int pk)
+        {
+            return appDbContext.Users.SingleOrDefault(t => t.Id == pk);
+        }
+
         public static UsersRepository GetInstance()
         {
             

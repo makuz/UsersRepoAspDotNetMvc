@@ -13,18 +13,43 @@ namespace UserRepoProject.Controllers
 
         private TopicsRepository topicsRepository = TopicsRepository.GetInstance();
 
+        private UsersRepository usersRepository = UsersRepository.GetInstance();
+
         public ActionResult AddNew()
         {
-            return View("AddTopicPage");
+
+            AddTopicView atv = new AddTopicView();
+
+            atv.topic = new Topic();
+            atv.allUsers = usersRepository.getAllUsersList();
+
+            return View("AddTopicPage", atv);
         }
 
         [HttpPost]
-        public ActionResult AddNew(Topic topic)
+        public ActionResult AddNew(AddTopicView topicViewModel)
         {
 
-            topicsRepository.addTopic(topic);
+            Topic newTopic = topicViewModel.topic;
+            int TopicUserID = topicViewModel.selectedUserId;
+
+            UserDetails topicUser = usersRepository.findOneByPk(TopicUserID);
+
+            newTopic.Author = topicUser;
+      
+            topicsRepository.addTopic(newTopic);
 
             return View("AddTopicPage");
+        }
+
+
+        public ActionResult showAllTopics()
+        {
+
+            AllTopicsViewModel vm = new AllTopicsViewModel();
+            vm.AllTopics = topicsRepository.findAll();
+
+            return View("AllTopicsPage", vm);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace UserRepoProject.Models
 
         public long TopicId { get; set; }
 
-        public UserDetails Author;
+        public UserDetails Author { get; set; }
 
         public string Title { get; set; }
 

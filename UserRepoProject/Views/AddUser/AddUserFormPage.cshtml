@@ -15,17 +15,17 @@
     <div class="form-group">
         @Html.LabelFor(u => u.Name, new { @Class = "control-label" })
         @Html.TextBoxFor(u => u.Name, new { @Class = "form-control" })
-        @Html.ValidationMessageFor(u => u.Name, "", new { @Class = "alert alert-danger" })
+        @Html.ValidationMessageFor(u => u.Name, "", new { @Class = "test alert alert-danger" })
     </div>
     <div class="form-group">
         @Html.LabelFor(u => u.lastName, new { @Class = "control-label" })
         @Html.TextBoxFor(u => u.lastName, new { @Class = "form-control" })
-        @Html.ValidationMessageFor(u => u.lastName, "", new { @Class = "alert alert-danger" })
+        @Html.ValidationMessageFor(u => u.lastName, "", new { @Class = "test alert alert-danger" })
     </div>
     <div class="form-group">
         @Html.LabelFor(u => u.Age, new { @Class = "control-label" })
         @Html.TextBoxFor(u => u.Age, new { @Class = "form-control" })
-        @Html.ValidationMessageFor(u => u.Age, "", new { @Class = "alert alert-danger" })
+        @Html.ValidationMessageFor(u => u.Age, "", new { @Class = "test alert alert-danger" })
     </div>
     <div class="form-group">
         <input class="btn btn-success" type="submit" value="add user" />

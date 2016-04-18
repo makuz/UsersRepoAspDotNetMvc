@@ -171,7 +171,13 @@
     <Compile Include="Migrations\201604181957424_Update-Database.Designer.cs">
       <DependentUpon>201604181957424_Update-Database.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604182121554_TopicsTableChange.cs" />
+    <Compile Include="Migrations\201604182121554_TopicsTableChange.Designer.cs">
+      <DependentUpon>201604182121554_TopicsTableChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AddTopicView.cs" />
+    <Compile Include="Models\AllTopicsViewModel.cs" />
     <Compile Include="Models\Topic.cs" />
     <Compile Include="Models\UserDetails.cs" />
     <Compile Include="Models\UsersTablePageViewModel.cs" />
@@ -221,6 +227,7 @@
     <Content Include="Views\AddUser\AddUserFormPage.cshtml" />
     <Content Include="Views\UsersTable\UsersTablePage.cshtml" />
     <Content Include="Views\AddTopic\AddTopicPage.cshtml" />
+    <Content Include="Views\AddTopic\AllTopicsPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -239,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604181957424_Update-Database.resx">
       <DependentUpon>201604181957424_Update-Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604182121554_TopicsTableChange.resx">
+      <DependentUpon>201604182121554_TopicsTableChange.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

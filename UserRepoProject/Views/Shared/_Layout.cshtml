@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jqueryval")
 </head>
@@ -17,13 +18,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("HOME", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("AddUser", "AddUserFormPage", "AddUser")</li>
-                    <li>@Html.ActionLink("UsersTable", "UsersTablePage", "UsersTable")</li>
-                    <li>@Html.ActionLink("AddTopic", "AddNew", "AddTopic")</li>
+                    <li>@Html.ActionLink("add user", "AddUserFormPage", "AddUser")</li>
+                    <li>@Html.ActionLink("all users", "UsersTablePage", "UsersTable")</li>
+                    <li>@Html.ActionLink("add topic", "AddNew", "AddTopic")</li>
+                    <li>@Html.ActionLink("all topics", "showAllTopics", "AddTopic")</li>
                 </ul>
             </div>
         </div>
