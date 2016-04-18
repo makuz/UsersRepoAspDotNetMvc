@@ -19,6 +19,7 @@ namespace UserRepoProject
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             // initializer
-            Database.SetInitializer<AppDbContext>(null);}
+            //Database.SetInitializer<AppDbContext>(null);
+        }
     }
 }

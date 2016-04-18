@@ -9,11 +9,10 @@ namespace UserRepoProject.Repository
 {
     public class UsersRepository
     {
-
-
+        
         private static UsersRepository usersRepositoryInstance = new UsersRepository();
 
-        private AppDbContext appDbContext = new AppDbContext();
+        private AppDbContext appDbContext = AppDbContext.GetInstance();
 
         private UsersRepository() { }
 

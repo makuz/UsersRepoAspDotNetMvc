@@ -112,3 +112,6 @@ C:\Users\makuz\Documents\Visual Studio 2015\Projects\UsersRepoProject\UserRepoPr
 C:\Users\makuz\Documents\Visual Studio 2015\Projects\UsersRepoProject\UserRepoProject\obj\Debug\UsersRepoProject.csprojResolveAssemblyReference.cache
 C:\Users\makuz\Documents\Visual Studio 2015\Projects\UsersRepoProject\UserRepoProject\obj\Debug\UserRepoProject.dll
 C:\Users\makuz\Documents\Visual Studio 2015\Projects\UsersRepoProject\UserRepoProject\obj\Debug\UserRepoProject.pdb
+C:\Users\makuz\Documents\Visual Studio 2015\Projects\UsersRepoProject\UserRepoProject\obj\Debug\UserRepoProject.Migrations.InitialCreate.resources
+C:\Users\makuz\Documents\Visual Studio 2015\Projects\UsersRepoProject\UserRepoProject\obj\Debug\UsersRepoProject.csproj.GenerateResource.Cache
+C:\Users\makuz\Documents\Visual Studio 2015\Projects\UsersRepoProject\UserRepoProject\obj\Debug\UserRepoProject.Migrations.UpdateDatabase.resources

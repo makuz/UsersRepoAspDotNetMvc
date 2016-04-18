@@ -24,6 +24,11 @@ namespace UserRepoProject.Controllers
         public ActionResult AddUserFormPage(UserDetails newUser)
         {
 
+            if (ModelState.IsValid == false)
+            {
+                return View();
+            }
+
             usersRepository.AddNewUser(newUser);
 
             return RedirectToAction("UsersTablePage", "UsersTable", new { area = "" });
